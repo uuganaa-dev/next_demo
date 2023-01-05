@@ -5,9 +5,9 @@ const _ID = () => {
   return (
     <div>
       <Head>
-        <title>Бидний тухай дэлгэрэнгүй</title>
+        <title>дэлгэрэнгүй</title>
       </Head>
-      _ID
+      дэлгэрэнгүй
     </div>
   );
 };

@@ -1,8 +1,27 @@
+import Head from "next/head";
+import Link from "next/link";
 import React from "react";
-import Home from "./home";
 
 const Index = () => {
-  return <Home />;
+  return (
+    <>
+      <Head>
+        <title>Нүүр хуудас</title>
+      </Head>
+      <ul>
+        <li className="bg-red-500">
+          <Link href="/">Home</Link>
+        </li>
+        <li>
+          <Link href="/category">category</Link>
+        </li>
+        <li>
+          <Link href="/kinonner">detail</Link>
+        </li>
+      </ul>
+      <div className="text-red-500"></div>
+    </>
+  );
 };
 
 export default React.memo(Index);
