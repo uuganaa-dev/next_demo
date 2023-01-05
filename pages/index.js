@@ -1,8 +1,10 @@
 import Head from "next/head";
 import Link from "next/link";
 import React from "react";
+import { useState } from "../contexts/Context";
 
 const Index = () => {
+  const { dispatch } = useState();
   return (
     <>
       <Head>
@@ -16,7 +18,19 @@ const Index = () => {
           <Link href="/category">category</Link>
         </li>
         <li>
-          <Link href="/kinonner">detail</Link>
+          <Link
+            href="/kinonner"
+            onClick={() => {
+              dispatch({
+                type: "CHANGE_STATE",
+                data: {
+                  header: false,
+                },
+              });
+            }}
+          >
+            detail
+          </Link>
         </li>
       </ul>
       <div className="text-red-500"></div>

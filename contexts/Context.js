@@ -4,6 +4,7 @@ import Reducer from "../reducers/Reducer";
 const Context = React.createContext();
 
 const initialState = {
+  header: true,
   list: [],
 };
 
