@@ -22,6 +22,7 @@ const Home = () => {
           <Link href="/contact">Contact</Link>
         </li>
       </ul>
+      <div className="text-red-500">asdasdsa</div>
     </>
   );
 };
