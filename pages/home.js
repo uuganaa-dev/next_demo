@@ -9,7 +9,7 @@ const Home = () => {
         <title>Нүүр хуудас</title>
       </Head>
       <ul>
-        <li>
+        <li className="bg-red-500">
           <Link href="/">Home</Link>
         </li>
         <li>
@@ -22,7 +22,7 @@ const Home = () => {
           <Link href="/contact">Contact</Link>
         </li>
       </ul>
-      <div className="text-red-500">asdasdsa</div>
+      <div className="text-red-500"></div>
     </>
   );
 };
